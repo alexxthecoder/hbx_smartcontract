@@ -1,0 +1,39 @@
+{
+  "name": "nft-smartcontract",
+  "version": "1.0.0",
+  "description": "Mints an nft to the user once a token reaches a certain threshold. \r First a user deposits nft(s) into the holding contract, then sets conditions for release \r i.e price of eth reaching a certain threshold. \r Once initiated the nft holding contract will interact with pricerequest contract and confirm the price of eth,\r If it is above threshold set it sends the nft to the contract caller, else it sends a text response that the condition has not been met. \r Pricerequest contract will request price of eth from chainlink aggregator. \r Runs on goerli network.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "alexxthecoder <alexanderatte@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@chainlink/contracts": "^0.6.1",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@openzeppelin/contracts": "^4.8.3",
+    "dotenv": "^16.0.3",
+    "solc": "^0.8.19",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@typechain/ethers-v5": "^10.2.0",
+    "@typechain/hardhat": "^6.1.5",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.7",
+    "ethers": "5.5.3",
+    "hardhat": "^2.14.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.2",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.1",
+    "typescript": "^5.0.4"
+  },
+  "repository": "git@github.com:alexxthecoder/nft-smartcontract.git"
+}
