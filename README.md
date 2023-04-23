@@ -7,5 +7,4 @@ If it is above threshold set it sends the nft to the contract caller, else it se
 Pricerequest contract will request price of eth from chainlink aggregator. 
 Runs on goerli network.
 
-P.S. To run this code using hardhat, provide PRIVATE_KEY in 
-/nft-smartcontract/.env
+P.S. To run this code using hardhat, provide /nft-smartcontract/.env
