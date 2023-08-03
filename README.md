@@ -1,5 +1,5 @@
 # NFT smartcontract
-Mints an nft to the user once a token reaches a certain threshold. 
+Holding contract that mints nft to user once ETH reaches a certain threshold. 
 First a user deposits nft(s) into the holding contract, then sets conditions for release 
 i.e price of eth reaching a certain threshold. 
 Once initiated the nft holding contract will interact with pricerequest contract and confirm the price of eth,
